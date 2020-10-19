@@ -1,7 +1,9 @@
 # Cloud-DevOps-Engineering-Capstone-Project
+
 This project applies the skills and knowledge which were developed throughout the Cloud DevOps Nanodegree program.
 
 ## Project Tasks
+
 The following tasks are carried out in this project:
 + Working in AWS
 + Using Jenkins to implement Continuous Integration and Continuous Deployment
@@ -12,4 +14,5 @@ The following tasks are carried out in this project:
 
 
 ## Licene
+
 [MIT](https://choosealicense.com/licenses/mit/)
