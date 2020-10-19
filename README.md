@@ -1,4 +1,4 @@
-# cd-Engineering-capstone-p (Cloud-DevOps-Engineering-Capstone-Project)
+# cd-Engineering-capstone (Cloud-DevOps-Engineering-Capstone)
 
 This project applies the skills and knowledge which were developed throughout the Cloud DevOps Nanodegree program.
 
