@@ -1,4 +1,4 @@
-# cd-Engineering-capstone (Cloud-DevOps-Engineering-Capstone)
+# udacity-cloud-devops-engineer-capstone
 
 This project applies the skills and knowledge which were developed throughout the Cloud DevOps Nanodegree program.
 
@@ -14,18 +14,24 @@ The following tasks are carried out in this project:
 
 #### Setup of EC2 for Jenkins
 
-##### JDK
+##### Java
 ```
-$ sudo apt-get update
-$ sudo apt install -y default-jdk        
-$ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-$ sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \ /etc/apt/sources.list.d/jenkins.list'
-$ sudo apt-get update
-$ sudo apt-get install jenkin
-$ sudo systemctl start jenkins
-$ sudo systemctl enable jenkins
-$ sudo systemctl status jenkins
-$ sudo apt install tidy
+sudo apt-get update
+sudo apt install -y default-jdk        
+```
+
+##### Intall Java
+```
+wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update
+sudo apt install jenkins
+```
+
+##### Start Jenkins
+```
+sudo systemctl start jenkins
+sudo systemctl status jenkins
 ```
 
 ## Licene
