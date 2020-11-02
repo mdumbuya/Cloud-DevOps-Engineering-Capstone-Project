@@ -34,14 +34,14 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
 
-## Licene
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
 ##### Ansible
 ```
 $ sudo apt-get update
 $ sudo apt install software-properties-common
 $ sudo apt-add-repository --yes --update ppa:ansible/ansible
 $ sudo apt install ansible
+```
+
+## Licene
+
+[MIT](https://choosealicense.com/licenses/mit/)
