@@ -5,8 +5,8 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
-dockerpath=mdumbuya93/api
+dockerpath=mdumbuya93
+
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
@@ -14,5 +14,4 @@ docker image tag capstone-app-mdumbu $dockerpath
 
 # Step 3:
 # Push image to a docker repository
-docker login
 docker push $dockerpath
