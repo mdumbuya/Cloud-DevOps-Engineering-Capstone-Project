@@ -9,8 +9,8 @@ pipeline {
          stage('Push Docker Image') {
               steps {
                   withDockerRegistry([url: "", credentialsId: "dockerhub"]) {
-                      sh "docker tag capstone-app-mdumbu mdumbuya93/capstone-app-mdumbu"
-                      sh 'docker push mdumbuya93/capstone-app-mdumbu'
+                      sh "sudo docker tag capstone-app-mdumbu mdumbuya93/capstone-app-mdumbu"
+                      sh 'sudo docker push mdumbuya93/capstone-app-mdumbu'
                   }
               }
          }
