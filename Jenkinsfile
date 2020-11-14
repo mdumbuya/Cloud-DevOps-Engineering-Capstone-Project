@@ -3,7 +3,7 @@ pipeline {
      stages {    
          stage('Build Docker Image') {
               steps {
-                  sh 'docker build -t capstone-app-mdumbu .'
+                  sh 'docker build --tag capstone-app-mdumbu .'
               }
          }
          stage('Push Docker Image') {
