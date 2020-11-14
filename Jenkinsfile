@@ -4,10 +4,10 @@ pipeline {
          stage('Build Docker Image') {
               steps {
 			  
-			      sh 'chmod +x run_docker.sh'
-				  sh 'chmod +x upload_docker.sh'
-				  sh './run_docker.sh'
-				  sh './upload_docker.sh'
+			      sh 'sudo chmod +x run_docker.sh'
+				  sh 'sudo chmod +x upload_docker.sh'
+				  sh 'sudo ./run_docker.sh'
+				  sh 'sudo ./upload_docker.sh'
 				 
               }
          }
