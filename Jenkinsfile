@@ -3,7 +3,12 @@ pipeline {
      stages {    
          stage('Build Docker Image') {
               steps {
-                  sh 'docker build --tag capstone-app-mdumbu .'
+			  
+			      sh 'chmod +x run_docker.sh'
+				  sh 'chmod +x upload_docker.sh'
+				  sh './run_docker.sh'
+				  sh './upload_docker.sh'
+				 
               }
          }
          stage('Push Docker Image') {
