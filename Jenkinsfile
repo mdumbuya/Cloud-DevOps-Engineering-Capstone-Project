@@ -1,6 +1,13 @@
 pipeline {
      agent any
-     stages {    
+     stages {  
+         stage('Lint Dockerfile') {
+              steps {
+                  sh 'python3 -m venv ~/.devops'
+				  sh 'hadolint Dockerfile'
+				  sh 'pylint --disable=R,C,W1203 app.py'
+              }
+         }	 
          stage('Build Docker Image') {
               steps {
                   sh 'docker build --tag capstone-app-mdumbu .'
