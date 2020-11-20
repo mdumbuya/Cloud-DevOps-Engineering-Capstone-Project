@@ -8,7 +8,9 @@ pipeline {
          }	 
          stage('Build Docker Image') {
               steps {
+			      echo 'Checking for errors in the Dockerfile.'
                   sh 'docker build --tag capstone-app-mdumbu .'
+				  echo 'No errors in the Dockerfile.'
               }
          }
          stage('Push Docker Image') {
@@ -39,6 +41,7 @@ pipeline {
                   withAWS(credentials: 'aws-static', region: 'us-east-2') {
                      sh "curl a1d65ba8aa7384a47ae58de6d912ec95-763487502.us-east-2.elb.amazonaws.com:80"
                   }
+				  echo 'App is up.'
                }
         }
         stage('Checking rollout') {
