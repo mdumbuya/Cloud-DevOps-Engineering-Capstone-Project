@@ -3,14 +3,14 @@ pipeline {
      stages {  
          stage('Lint Dockerfile') {
               steps {
+			      echo 'Checking for errors in the Dockerfile.'
 				  sh 'hadolint Dockerfile'
+				  echo 'No errors in the Dockerfile.'
               }
          }	 
          stage('Build Docker Image') {
-              steps {
-			      echo 'Checking for errors in the Dockerfile.'
+              steps { 
                   sh 'docker build --tag capstone-app-mdumbu .'
-				  echo 'No errors in the Dockerfile.'
               }
          }
          stage('Push Docker Image') {
