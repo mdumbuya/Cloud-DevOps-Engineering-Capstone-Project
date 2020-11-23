@@ -1,4 +1,4 @@
-# Udacity Cloud Devops Engineer Capstone 
+# Udacity Cloud DevOps Engineer Capstone 
 
 ## Overview
 
